@@ -17,7 +17,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UITextField!
     
     @IBAction func buttonTapped(_ sender: Any) {
-        coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        
+        let addition = true
+        
+        if addition {
+            coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+           coolLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        }
     }
     
     override func viewDidLoad() {
